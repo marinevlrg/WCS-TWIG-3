@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Products</title>
+		<link rel="icon" href="/assets/images/favicon.png">
+		<link rel="stylesheet" href="/assets/css/styles.css">
+	</head>
+
+	<body>
+		<h1>Products</h1>
+
+        {% for product in products %}
+
+        <ul>
+        <li>{{product}}</li>
+        </ul>
+
+        {% endfor %}
+
+        {{dump(products)}}
+
+	</body>
+</html>
